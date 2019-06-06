@@ -1,10 +1,17 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+<<<<<<< HEAD
 ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
+=======
+ruby '2.5.1'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '~> 5.2.2'
+>>>>>>> b6343cd2706f51907ac3662b8af063fd7aea823c
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 # Use Puma as the app server
@@ -39,6 +46,12 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+<<<<<<< HEAD
+=======
+  gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
+  gem 'database_cleaner'
+>>>>>>> b6343cd2706f51907ac3662b8af063fd7aea823c
 end
 
 group :development do
@@ -52,7 +65,11 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
+<<<<<<< HEAD
   gem 'capybara', '>= 2.15'
+=======
+
+>>>>>>> b6343cd2706f51907ac3662b8af063fd7aea823c
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
@@ -60,3 +77,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+<<<<<<< HEAD
+=======
+
+gem 'devise', '~> 4.6', '>= 4.6.2'
+>>>>>>> b6343cd2706f51907ac3662b8af063fd7aea823c
