@@ -44,6 +44,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 
   gem 'database_cleaner'
+  #gem 'factory_girl', '~> 4.9'
+  gem 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
 
 end
 

@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   #pending "add some examples to (or delete) #{__FILE__}"
   before do
-      @user = User.create(email:'test@test.com', password:'abcdef', password_confirmation:'abcdef', first_name:'john',last_name: 'snow')
+      #@user = User.create(email:'test@test.com', password:'abcdef', password_confirmation:'abcdef', first_name:'john',last_name: 'snow')
+      @user = FactoryBot.create(:user)
   end
 
   describe "creation" do
