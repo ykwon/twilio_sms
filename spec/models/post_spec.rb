@@ -18,4 +18,5 @@ RSpec.describe Post, type: :model do
       expect(@post).to_not be_valid
     end
   end
+  
 end
