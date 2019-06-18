@@ -15,3 +15,7 @@ x Block non Admin and guest users
 
 # UI
 - x Bootstrap -> formatting
+
+# Refactor TODOS"
+- Refactor user association intergration test in post_spec
+- Refactor post/_form for admin user with status
