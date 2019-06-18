@@ -89,5 +89,15 @@ describe 'navigate' do
       click_on "Save"
       expect(page).to have_content("Edited content")
     end
+
+    it 'can be edited' do
+      visit edit_post_path(@post)
+      #expect(page.status_code).to eq(200)
+      fill_in 'post[date]', with: Date.today
+      fill_in 'post[rationale]', with: "Edited content"
+      click_on "Save"
+      expect(page).to have_content("Edited content")
+    end
+
   end
 end

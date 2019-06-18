@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
+
   before_action :set_post, only: [:show,:edit, :update,:destroy]
+
   def index
     @posts=Post.all
   end
@@ -16,6 +18,10 @@ class PostsController < ApplicationController
     else
       render :new
     end
+  end
+  
+  def edit
+    
   end
 
   def edit
