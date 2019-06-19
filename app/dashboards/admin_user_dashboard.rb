@@ -52,6 +52,7 @@ class AdminUserDashboard < Administrate::BaseDashboard
     :last_name,
     :created_at,
     :updated_at,    
+    :type,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -61,7 +62,9 @@ class AdminUserDashboard < Administrate::BaseDashboard
     :email,
     :password,
     :first_name,
-    :last_name,        
+    :last_name,   
+    :type,     
+    :phone,
   ].freeze
 
   # Overwrite this method to customize how admin users are displayed

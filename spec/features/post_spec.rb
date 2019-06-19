@@ -25,8 +25,16 @@ describe 'navigate' do
       visit posts_path
       expect(page).to have_content(/Rationale|content/)
     end
-  end
-  
+    
+    # it 'has a scope so that only post creators can see their posts' do
+    #   other_user = User.create(first_name:'Non', last_name:'Authorized', email:'nonauth@example.com', password: "abcdef",
+    #     password_confirmation:"abcdef", phone: "5555555555")
+    #   post_from_other_user =Post.create(date: Date.today, rationale:"This post shouldn't be seen", user_id: other_user.id, overtime_request: 3.5)
+    #   visit posts_path
+    #   expect(page).to_not have_content(/This post shouldn't be seen/)
+    # end
+end
+
   describe  'new' do
     it 'has a link from the homepage' do
       visit root_path

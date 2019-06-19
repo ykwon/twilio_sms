@@ -61,7 +61,8 @@ class UserDashboard < Administrate::BaseDashboard
     :email,
     :password,
     :first_name,
-    :last_name,        
+    :last_name,     
+    :phone,   
   ].freeze
 
   # Overwrite this method to customize how users are displayed
